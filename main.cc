@@ -71,6 +71,9 @@ int main(int argc, char *argv[]) {
         --j;
       }
       break;
+    default:
+      std::cerr << "error: unexpected character " << c << std::endl;
+      return EXIT_FAILURE;
     }
     ++j;
   }
